@@ -5,129 +5,149 @@
   <title>Vishnu Kumar Kanti | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-  <script src="style.js"></script>
+  <script src="style.js" defer></script>
 </head>
 <body>
-
-  <!-- Overlay for better text readability -->
   <div class="overlay"></div>
 
-  <!-- Header Section -->
-  <div class="header-section">
-    <div class="bio-text">
-      <div class="blur-box">
-        <h1>Vishnu Kumar Kanti</h1>
-        <h3>Customer Success & Technical Specialist</h3>
-        <p>
-          Customer Success professional with 3+ years of experience in onboarding, CRM automation, API integration, and retention.
-          Skilled in managing global B2B clients, driving product adoption, and leading technical support and strategic engagements.
-        </p>
+  <main class="content-wrapper">
+    <!-- Overlay and Header Section -->
+    <div class="header-experience-wrapper">
+      <div class="glass-container two-column-layout">
+        <!-- Bio Section -->
+        <div class="bio-column">
+          <div class="bio-text">
+            <h1>Vishnu Kumar Kanti</h1>
+            <h3>Customer Success & Technical Specialist</h3>
+            <p>
+              Customer Success professional with 3+ years of experience in onboarding, CRM
+              automation, API integration, and retention. Skilled in managing global B2B clients,
+              driving product adoption, and leading technical support and strategic engagements.
+            </p>
+          </div>
+          <div class="bio-photo">
+            <img src="profile.jpg" alt="Viishy's Profile Picture" />
+          </div>
+        </div>
+  
+        <!-- Experience Section -->
+        <div class="experience-column">
+          <h2 class="text-3xl font-bold text-left w-full">Work Experience</h2>
+          <div class="experience-cards-wrapper">
+            <div class="experience-card" onclick="openModal('modal-ghl')">
+              <h3>Account Specialist</h3>
+              <p>GoHighLevel</p>
+              <p><em>Jul 2023 – Jan 2025</em></p>
+            </div>
+            <div class="experience-card" onclick="openModal('modal-seara')">
+              <h3>Customer Support Rep</h3>
+              <p>SearaHealth</p>
+              <p><em>Aug 2022 – May 2023</em></p>
+            </div>
+            <div class="experience-card" onclick="openModal('modal-ftd')">
+              <h3>Sales Engineer</h3>
+              <p>FTD Automation</p>
+              <p><em>Jul 2021 – Nov 2021</em></p>
+            </div>
+            <div class="experience-card" onclick="openModal('modal-247')">
+              <h3>Digital Advisor</h3>
+              <p>[24]7.ai</p>
+              <p><em>Aug 2017 – Dec 2017</em></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="bio-photo">
-      <img src="profile.jpg" alt="Viishy's Profile Picture" />
-    </div>
-  </div>
-
-  <!-- Work Experience Section -->
-  <section class="experience-section">
-    <h2>Work Experience</h2>
-    <div class="experience-container">
-
-      <div class="experience-card" onclick="openModal('modal-ghl')">
-        <h3>Account Specialist</h3>
-        <p>GoHighLevel</p>
+  
+    <!-- Skills and Tools Sections -->
+    <section class="glass-container side-skills-tools">
+      <div class="skills-tools-wrapper">
+        <div class="skills-side">
+          <div class="skill-card">CRM & Customer Success</div>
+          <div class="skill-card">Product Adoption</div>
+          <div class="skill-card">Zapier & Automation</div>
+          <div class="skill-card">API Testing (Postman)</div>
+        </div>
+        <div class="skills-side">
+          <div class="skill-card">Salesforce, Zendesk, Freshdesk</div>
+          <div class="skill-card">MySQL / HTML / CSS / JSON</div>
+          <div class="skill-card">Onboarding & Training</div>
+          <div class="skill-card">Communication & Problem-Solving</div>
+        </div>
       </div>
+    </section>
+  
 
-      <div class="experience-card" onclick="openModal('modal-seara')">
-        <h3>Customer Support Rep</h3>
-        <p>SearaHealth</p>
-      </div>
 
-      <div class="experience-card" onclick="openModal('modal-ftd')">
-        <h3>Sales Engineer</h3>
-        <p>FTD Automation</p>
-      </div>
+  
 
-      <div class="experience-card" onclick="openModal('modal-247')">
-        <h3>Digital Advisor</h3>
-        <p>[24]7.ai</p>
-        <p><em>Aug 2017 – Dec 2017</em></p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills-section">
-    <h2>Skills & Tools</h2>
-    <div class="skills-grid">
-      <div>CRM & Customer Success</div>
-      <div>Product Adoption</div>
-      <div>Onboarding & Training</div>
-      <div>Upselling / Cross-Selling</div>
-      <div>API Testing (Postman)</div>
-      <div>MySQL / HTML / CSS / JSON</div>
-      <div>Zapier & Automation</div>
-      <div>Salesforce, Zendesk, Freshdesk</div>
-      <div>Communication & Problem-Solving</div>
-    </div>
-  </section>
-
-  <!-- Modal: GoHighLevel -->
-  <div id="modal-ghl" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-ghl')">&times;</span>
-      <h3>Account Specialist – GoHighLevel</h3>
-      <p><em>Jul 2023 – Jan 2025</em></p>
+    <!-- Education Section -->
+    <section class="glass-container education-section">
+      <h2>Education</h2>
       <ul>
-        <li>Managed 200+ global clients in B2B SaaS</li>
-        <li>Led onboarding, set up Twilio/Firebase, ran live Zoom sessions</li>
-        <li>Automated workflows using Zapier</li>
-        <li>Helped reduce churn and improve adoption rates</li>
+        <li><strong>B.E. in Electrical and Electronics Engineering</strong> – Anna University</li>
+        <li><strong>High School</strong> – S.C.S Matriculation Higher Secondary School</li>
       </ul>
-    </div>
-  </div>
+    </section>
 
-  <!-- Modal: SearaHealth -->
-  <div id="modal-seara" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-seara')">&times;</span>
-      <h3>Customer Support Rep – SearaHealth</h3>
-      <p><em>Aug 2022 – May 2023</em></p>
-      <ul>
-        <li>Established support process as pilot team member</li>
-        <li>Created knowledge base, SLAs, and defined KPIs</li>
-        <li>Handled 1000+ tickets, performed data analysis</li>
-      </ul>
-    </div>
-  </div>
+    <!-- Resume & Links Section -->
+    <section class="links-section glass-container">
+      <h2>Explore More</h2>
+      <div class="link-buttons">
+        <a href="Vishnu_Resume.pdf" class="btn" download>Download Resume</a>
+        <a href="https://linkedin.com/in/vkanti" class="btn" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Viishy" class="btn" target="_blank">GitHub</a>
+        <a href="https://www.naukri.com/mnjuser/profile" class="btn" target="_blank">Naukri</a>
+      </div>
+    </section>
 
-  <!-- Modal: FTD Automation -->
-  <div id="modal-ftd" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-ftd')">&times;</span>
-      <h3>Technical Sales Engineer – FTD Automation</h3>
-      <p><em>Jul 2021 – Nov 2021</em></p>
-      <ul>
-        <li>Led customer demos, supported clients via Zendesk</li>
-        <li>Assisted in PCB testing, simulations, and feedback</li>
-      </ul>
+    <!-- MODALS -->
+    <div id="modal-ghl" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-ghl')">&times;</span>
+        <h3>Account Specialist – GoHighLevel</h3>
+        <ul>
+          <li>Managed 200+ global clients in B2B SaaS</li>
+          <li>Led onboarding, set up Twilio/Firebase, ran live Zoom sessions</li>
+          <li>Automated workflows using Zapier</li>
+          <li>Helped reduce churn and improve adoption rates</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <!-- Modal: [24]7.ai -->
-  <div id="modal-247" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal-247')">&times;</span>
-      <h3>Digital Advisor – [24]7.ai</h3>
-      
-      <ul>
-        <li>Resolved billing, refund, and product queries</li>
-        <li>Maintained strong customer satisfaction via chat/voice</li>
-      </ul>
+    <div id="modal-seara" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-seara')">&times;</span>
+        <h3>Customer Support Rep – SearaHealth</h3>
+        <ul>
+          <li>Established support process as pilot team member</li>
+          <li>Created knowledge base, SLAs, and defined KPIs</li>
+          <li>Handled 1000+ tickets, performed data analysis</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
+    <div id="modal-ftd" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-ftd')">&times;</span>
+        <h3>Technical Sales Engineer – FTD Automation</h3>
+        <ul>
+          <li>Led customer demos, supported clients via Zendesk</li>
+          <li>Assisted in PCB testing, simulations, and feedback</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-247" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-247')">&times;</span>
+        <h3>Digital Advisor – [24]7.ai</h3>
+        <ul>
+          <li>Resolved billing, refund, and product queries</li>
+          <li>Maintained strong customer satisfaction via chat/voice</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
