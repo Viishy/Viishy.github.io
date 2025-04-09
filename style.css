@@ -139,3 +139,36 @@ img {
 h1, h2, h3 {
   color: #1b4332;
 }
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-text {
+    padding-right: 0;
+  }
+
+  .bio-photo img {
+    height: 120px;
+    margin-top: 20px;
+  }
+
+  .experience-card {
+    width: 90%;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .experience-front,
+  .experience-back {
+    position: relative;
+    transform: none !important;
+    backface-visibility: visible;
+  }
+
+  .experience-card.flipped .experience-front,
+  .experience-card.flipped .experience-back {
+    transform: none;
+  }
+}
