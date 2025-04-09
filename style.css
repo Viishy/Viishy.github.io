@@ -1,11 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: linear-gradient(to top left, #d8f3dc, #b7e4c7, #95d5b2);
   margin: 0;
   padding: 20px;
   text-align: center;
   color: #1b4332;
 }
+
 
 .container {
   max-width: 800px;
