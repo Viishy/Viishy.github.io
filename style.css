@@ -72,8 +72,10 @@ z-index: 1;
 .experience-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .experience-card {
