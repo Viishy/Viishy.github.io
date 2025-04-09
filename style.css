@@ -65,9 +65,12 @@ z-index: 1;
 
 .experience-section h2 {
   font-size: 28px;
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #ffffff;
+  text-align: left; /* 🔄 change from center */
+  padding-left: 10px;
 }
+
 
 .experience-container {
   display: flex;
