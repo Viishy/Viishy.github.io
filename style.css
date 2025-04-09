@@ -5,7 +5,7 @@ body {
   padding: 20px;
   text-align: center;
   color: #1b4332;
-  min-height: 100vh; /* 👈 ADD THIS LINE */
+  min-height: 100vh;
 }
 
 
