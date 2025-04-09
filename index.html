@@ -1,39 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vishy's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <script src="style.js"></script>
+  <meta charset="UTF-8" />
+  <title>Vishnu Kumar Kanti | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body> 
-<div class="header-section">
-  <div class="bio-text">
-    <h1>Vishnu Kumar Kanti</h1>
-    <h3>Customer Success & Technical Specialist</h3>
-    <p>Customer Success Specialist with 3+ years of experience in onboarding, CRM automation, API integration, and client retention. I’ve helped 200+ global clients drive adoption and growth through data, empathy, and smart automation.</p>
-  </div>
-  <div class="bio-photo">
-    <img src="profile.jpg" alt="Viishy's Profile Picture">
-  </div>
-</div>
-<section class="experience-section">
-  <h2>Work Experience</h2>
-  <div class="experience-card" onclick="toggleDetails(this)">
-    <div class="experience-front">
-      <h3>Customer Support Representative</h3>
-      <p>SearaHealth | 2021 – 2023</p>
+<body>
+  <!-- Overlay for better text readability -->
+  <div class="overlay"></div>
+
+  <!-- Header Section -->
+  <div class="header-section">
+    <div class="bio-text">
+      <h1>Vishnu Kumar Kanti</h1>
+      <h3>Customer Success & Technical Specialist</h3>
+      <p>
+        Customer Success professional with 3+ years of experience in onboarding, CRM automation, API integration, and retention. 
+        Skilled in managing global B2B clients, driving product adoption, and leading technical support and strategic engagements.
+      </p>
     </div>
-    <div class="experience-back">
-      <ul>
-        <li>Built support from scratch as pilot team member</li>
-        <li>Created knowledge base and SLAs</li>
-        <li>Handled technical troubleshooting & analysis</li>
-        <li>Collaborated cross-functionally on product insights</li>
-      </ul>
+    <div class="bio-photo">
+      <img src="profile.jpg" alt="Viishy's Profile Picture" />
     </div>
   </div>
-</section>
+
+  <!-- Work Experience -->
+  <section class="experience-section">
+    <h2>Work Experience</h2>
+
+    <!-- Experience Cards -->
+    <div class="experience-container">
+      <div class="experience-card" onclick="toggleDetails(this)">
+        <div class="experience-front">
+          <h3>Account Specialist</h3>
+          <p>GoHighLevel | Jul 2023 – Jan 2025</p>
+        </div>
+        <div class="experience-back">
+          <ul>
+            <li>Managed 200+ clients, increased retention by 20%</li>
+            <li>Led onboarding via Zoom, configured Google Cloud & Firebase</li>
+            <li>Automated workflows with Zapier</li>
+            <li>Influenced roadmap through customer insights</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-card" onclick="toggleDetails(this)">
+        <div class="experience-front">
+          <h3>Customer Support Rep</h3>
+          <p>SearaHealth | Aug 2022 – May 2023</p>
+        </div>
+        <div class="experience-back">
+          <ul>
+            <li>Created support processes & SLAs</li>
+            <li>Resolved 1000+ tickets via Salesforce</li>
+            <li>Built a self-service knowledge base</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-card" onclick="toggleDetails(this)">
+        <div class="experience-front">
+          <h3>Technical Sales Engineer</h3>
+          <p>FTD Automation | Jul 2021 – Nov 2021</p>
+        </div>
+        <div class="experience-back">
+          <ul>
+            <li>Led product demos and training</li>
+            <li>Supported customers via Zendesk</li>
+            <li>Conducted PCB testing and simulations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-card" onclick="toggleDetails(this)">
+        <div class="experience-front">
+          <h3>Digital Advisor</h3>
+          <p>[24]7.ai | Aug 2017 – Dec 2017</p>
+        </div>
+        <div class="experience-back">
+          <ul>
+            <li>Provided chat and voice support for Sears</li>
+            <li>Resolved billing, refund, and product queries</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div>CRM & Customer Success</div>
+      <div>Product Adoption</div>
+      <div>Onboarding & Training</div>
+      <div>Upselling / Cross-Selling</div>
+      <div>API Testing (Postman)</div>
+      <div>MySQL / HTML / CSS / JSON</div>
+      <div>Zapier & Automation</div>
+      <div>Salesforce, Zendesk, Freshdesk</div>
+      <div>Communication & Problem-Solving</div>
+    </div>
+  </section>
+
+  <script src="style.js"></script>
 </body>
 </html>
