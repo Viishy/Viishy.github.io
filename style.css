@@ -1,15 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to top left, #d8f3dc, #95d5b2, #52b788);
+  background: url('aurora-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 20px;
   text-align: center;
-  color: #1b4332;
+  color: #ffffff;
   min-height: 100vh;
 }
-
-
-
 .container {
   max-width: 800px;
   margin: auto;
