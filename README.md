@@ -1,4 +1,4 @@
-# Viishy's Portfolio Website
+# Vishnu's Portfolio Website
 
 This is my personal profile website built using HTML and hosted for free using GitHub Pages.
 
