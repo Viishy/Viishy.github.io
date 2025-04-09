@@ -7,6 +7,7 @@ body {
   color: #ffffff;
   min-height: 100vh;
   position: relative;
+z-index: 1;
 }
 
 .overlay {
@@ -14,9 +15,10 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 30, 20, 0.6);
+  background: rgba(0, 0, 0, 0.5); /* darkens image slightly */
   z-index: 0;
 }
+
 
 .header-section {
   display: flex;
