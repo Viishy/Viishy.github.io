@@ -12,7 +12,8 @@ body {
 
 .overlay {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -20,7 +21,7 @@ body {
 }
 
 .content-wrapper {
-  max-width: 1200px;
+  max-width: 1400px; /* Increased max-width to utilize more space */
   margin: 0 auto;
   padding: 0 20px;
   z-index: 1;
@@ -40,7 +41,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 16px;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 1200px; /* Adjusted max-width to fit within content-wrapper */
   width: 100%;
   gap: 30px;
 }
@@ -59,7 +60,7 @@ body {
 }
 
 .bio-photo img {
-  height: 130px;
+  height: 180px;
   width: auto;
   max-width: 100%;
   border-radius: 16px;
@@ -67,65 +68,33 @@ body {
   object-fit: cover;
 }
 
-/* Glass Blur Box Base */
 .glass-container {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 16px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 30px;
   width: 100%;
 }
 
-.blur-box h1, .blur-box h3, .blur-box p {
+.blur-box h1,
+.blur-box h3,
+.blur-box p {
   color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* Experience Section */
 .experience-section {
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
-.experience-row-layout {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-/* Skills & Tools Card Column */
-.skills-side {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.skill-card {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  color: #fff;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.skill-card:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Experience Container */
 .experience-box h2 {
   font-size: 28px;
   color: #ffffff;
   text-align: left;
   margin-bottom: 20px;
+  align-items: flex-start;
 }
 
 .experience-container {
@@ -166,7 +135,6 @@ body {
   color: #40916c;
 }
 
-/* Education */
 .education-section {
   margin-top: 40px;
   color: #ffffff;
@@ -186,7 +154,6 @@ body {
   list-style: disc;
 }
 
-/* Links Section */
 .links-section {
   margin: 40px 0;
   text-align: center;
@@ -215,7 +182,6 @@ body {
   background-color: #55c57a;
 }
 
-/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -224,7 +190,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   animation: fadeIn 0.3s ease;
 }
 
@@ -250,29 +216,34 @@ body {
   cursor: pointer;
 }
 
-/* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1000px) {
-  .experience-row-layout {
-    grid-template-columns: 1fr;
-  }
-
   .experience-container {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .experience-card {
-    width: 45%;
+    width: 80%;
     margin-bottom: 20px;
   }
 
@@ -282,7 +253,8 @@ body {
     text-align: center;
   }
 
-  .bio-text, .bio-photo {
+  .bio-text,
+  .bio-photo {
     flex: unset;
     width: 100%;
   }
@@ -290,13 +262,14 @@ body {
 
 @media (max-width: 600px) {
   .experience-card {
-    width: 100%;
+    width: 95%;
   }
 
   .link-buttons {
     flex-direction: column;
   }
 }
+
 .header-experience-wrapper {
   padding: 30px 0;
 }
@@ -338,7 +311,6 @@ body {
   padding-top: 10px;
 }
 
-/* New side-by-side Skills + Tools block */
 .side-skills-tools {
   margin-top: 30px;
 }
@@ -350,7 +322,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Ensures mobile responsiveness */
 @media screen and (max-width: 768px) {
   .two-column-layout {
     flex-direction: column;
@@ -359,5 +330,36 @@ body {
   .skills-tools-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.full-bio-box,
+.experience-box {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.experience-box h2 {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1001px) {
+  .experience-container {
+    justify-content: center;
+  }
+  .experience-card {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    padding: 0 10px;
+  }
+
+  .full-bio-box,
+  .experience-box {
+    padding: 20px;
   }
 }
