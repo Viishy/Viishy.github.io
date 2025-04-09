@@ -81,17 +81,23 @@ z-index: 1;
 .experience-card {
   width: 150px;
   height: 150px;
-  overflow: hidden;
-  background-color: #ffffff;
-  color: #000000;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: all 0.4s ease-in-out;
+  background-color: #ffffff;
+  color: #1b4332;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #80ed99;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  position: relative;
-  padding: 12px;
-  box-sizing: border-box;
 }
+
+.experience-card:hover {
+  background-color: #e3fcec;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 .experience-card.expanded {
   width: 100%;
@@ -103,14 +109,15 @@ z-index: 1;
 
 .experience-card h3 {
   font-size: 16px;
-  margin: 0 0 6px 0;
+  margin-bottom: 5px;
+  color: #1b4332;
 }
 
-.experience-card p.company {
+.experience-card p {
   font-size: 13px;
-  color: #444;
-  margin: 0 0 10px 0;
+  color: #40916c;
 }
+
 
 .experience-card ul {
   margin: 0;
@@ -195,8 +202,9 @@ z-index: 1;
 }
 
 .modal-content h3 {
-  margin-top: 0;
+  color: #40916c;
 }
+
 
 .modal-content ul {
   margin-top: 10px;
