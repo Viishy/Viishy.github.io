@@ -1,89 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Vishnu Kumar Kanti | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="style.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vishnu-Portfolio</title>
 </head>
 <body>
-    <div class="overlay"></div>
-    <main class="content-wrapper">
-        <header class="header-section">
-            <div class="glass-container full-bio-box">
-                <div class="bio-text">
-                    <h1>Vishnu Kumar Kanti</h1>
-                    <h3>Customer Success & Technical Specialist</h3>
-                    <p>
-                        Customer Success professional with 3+ years of experience in onboarding, CRM
-                        automation, API integration, and retention. Skilled in managing global B2B clients,
-                        driving product adoption, and leading technical support and strategic engagements.
-                    </p>
-                </div>
-                <div class="bio-photo">
-                    <img src="profile.jpg" alt="Viishy's Profile Picture" style="width: 150px; height: auto; border-radius: 12px;" />
+    <header>
+        <nav>
+            <div class="left">Vishnu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
+                    <li><a href="#skills">Skills & Tools</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi, My name is <span class="text-purple">Vishnu Kumar Kanti</span>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+                <div class="hero-buttons">
+                    <a href="Vishnu_Resume.pdf" class="btn" download> <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/vishnu-kumar-787793297/" class="btn" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
-        </header>
-        <section class="experience-section">
-            <div class="glass-container experience-box">
-                <h2>Work Experience</h2>
-                <div class="experience-container">
-                    <div class="experience-card" onclick="openModal('modal-ghl')">
-                        <h3>Account Specialist</h3>
-                        <p>GoHighLevel</p>
-                        <p><em>Jul 2023 – Jan 2025</em></p>
+            <div class="rightSection">
+                <img src="bg.png" alt="Vishnu Kumar Kanti - Portfolio Image">
+            </div>
+        </section>
+
+        <section class="content-section" id="about">
+            <h2>About Me</h2>
+            <p>
+                A customer success professional with 3+ years of experience specializing in client onboarding, retention
+                strategies, technical support, CRM automation, API integrations, and driving product adoption. Highly skilled in managing diverse customer relationships, fostering engagement, and collaborating
+                effectively with cross-functional teams (sales, product) to significantly enhance customer experience
+                and fuel business growth.
+            </p>
+            <p>
+                Proven ability to improve customer retention rates, identify valuable upsell/cross-sell opportunities,
+                and proactively resolve complex issues to boost satisfaction and cultivate long-term loyalty.
+                Successfully managed a global portfolio of over 200 B2B clients, contributing to more than $1M in
+                annual recurring revenue (ARR), while consistently maintaining high retention and satisfaction
+                levels. Detail-oriented, adaptable, and always ready to embrace new challenges and continuously
+                learn.
+            </p>
+        </section>
+
+        <section class="content-section" id="work-experience">
+            <span class="section-subtitle">What I have done so far</span>
+            <h2>Work Experience</h2>
+            <div class="work-container">
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="details1">
+                        <div>
+                            <h3>Account Specialist</h3>
+                            <p>GoHighLevel (GHL)</p>
+                            <em>July 2023 - Jan 2025</em>
+                        </div>
+                        <span class="toggle-icon">+</span>
                     </div>
-                    <div class="experience-card" onclick="openModal('modal-seara')">
-                        <h3>Customer Support Rep</h3>
-                        <p>SearaHealth</p>
-                        <p><em>Aug 2022 – May 2023</em></p>
+                    <div class="work-details" id="details1">
+                        <ul>
+                            <li>Managed a diverse portfolio of 200+ B2B clients, focusing on enhancing product adoption
+                                and efficiently resolving escalations.</li>
+                            <li>Increased customer retention significantly (12% in month one, 8% in month two) through
+                                proactive engagement strategies.</li>
+                            <li>Led comprehensive customer onboarding processes via live Zoom sessions, ensuring
+                                seamless software adoption and fostering long-term user engagement.</li>
+                            <li>Configured Google Cloud services, integrated APNS with Google Firebase, managed Twilio
+                                SSL certificates, and set up Android APIs to optimize platform functionality for
+                                clients.</li>
+                            <li>Identified and capitalized on upsell/cross-sell opportunities, directly contributing to
+                                increased recurring revenue and enhanced customer lifetime value.</li>
+                            <li>Proactively gathered and analyzed customer feedback, influencing product development
+                                roadmaps and driving improvements in UI/UX features.</li>
+                            <li>Automated key onboarding workflows using Zapier, substantially reducing manual effort
+                                and improving operational efficiency.</li>
+                            <li>Collaborated closely with sales and product development teams to refine customer
+                                experience strategies and build stronger customer loyalty.</li>
+                        </ul>
                     </div>
-                    <div class="experience-card" onclick="openModal('modal-ftd')">
-                        <h3>Sales Engineer</h3>
-                        <p>FTD Automation</p>
-                        <p><em>Jul 2021 – Nov 2021</em></p>
+                </div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="details2">
+                        <div>
+                            <h3>Junior Software Engineer</h3>
+                            <p>SearaHealth</p>
+                            <em>Jan 2023 - Jun 2023</em>
+                        </div>
+                        <span class="toggle-icon">+</span>
                     </div>
-                    <div class="experience-card" onclick="openModal('modal-247')">
-                        <h3>Digital Advisor</h3>
-                        <p>[24]7.ai</p>
-                        <p><em>Aug 2017 – Dec 2017</em></p>
+                    <div class="work-details" id="details2">
+                        <ul>
+                            <li>Developed front-end components for a web application using HTML5, CSS3, and Angular for
+                                a health-tech startup.</li>
+                            <li>Partnered with a team of 5 developers to create and implement features for web
+                                applications targeting small businesses.</li>
+                            <li>Implemented responsive designs ensuring cross-browser compatibility.</li>
+                            <li>Participated in code reviews and agile development cycles.</li>
+                            <li>Assisted in troubleshooting and debugging software issues.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="details3">
+                        <div>
+                            <h3>Customer Support Representative</h3>
+                            <p>SearaHealth</p>
+                            <em>Aug 2022 - May 2023</em>
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="details3">
+                        <ul>
+                            <li>Established and documented customer support processes, defined Service Level Agreements
+                                (SLAs), and created a self-service knowledge base to enhance customer success and
+                                autonomy.</li>
+                            <li>Resolved over 1000 support tickets efficiently using Salesforce CRM, achieving high
+                                Customer Satisfaction (CSAT) scores and improving average response times.
+                            </li>
+                            <li>Acted as a crucial communication bridge between customers and product development teams,
+                                providing valuable insights for feature enhancements and effective issue
+                                resolution.</li>
+                            <li>Maintained the call center database by meticulously collecting and recording customer
+                                interaction information.</li>
+                            <li>Collaborated with the healthcare team to establish and manage patient care coordination
+                                related to the platform.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="details4">
+                        <div>
+                            <h3>Technical Sales Engineer</h3>
+                            <p>FTD Automation Pvt. Ltd.</p>
+                            <em>July 2021 - Nov 2021</em> 
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="details4">
+                        <ul>
+                            <li>Conducted compelling product demonstrations and technical training sessions, assisting
+                                clients effectively with both software and hardware automation solutions.
+                            </li>
+                            <li>Provided timely technical support via Zendesk, improving customer adoption rates and
+                                contributing to churn reduction.</li>
+                            <li>Supported clients with essential technical resources, contributing significantly to
+                                sales success</li>
+                            <li>Assisted in critical Printed Circuit Board (PCB) testing and product simulations to
+                                ensure a high-quality and seamless customer experience</li>
+                            <li>Utilized knowledge of power systems, distribution, circuit calculations, and
+                                instrumentation in technical discussions and solution proposals.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="details5">
+                        <div>
+                            <h3>Digital Interaction Advisor</h3>
+                            <p>[24]7.ai</p>
+                            <em>Aug 2017 - Dec 2017</em>
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="details5">
+                        <ul>
+                            <li>Provided multi-channel (chat, voice) customer support for Sears, efficiently handling
+                                inquiries related to billing, refunds, orders, and product details.</li>
+                            <li>Ensured high customer satisfaction scores through effective problem-solving and
+                                professional dispute resolution.</li>
+                            <li>Identified and maximized sales opportunities during interactions, contributing to
+                                increased customer retention rates.</li>
+                            <li>Experienced in effectively managing multiple concurrent chat interactions while
+                                maintaining service quality.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="glass-container side-skills-tools">
-            <div class="skills-tools-wrapper">
-                <div class="skills-side">
-                    <div class="skill-card">CRM & Customer Success</div>
-                    <div class="skill-card">Product Adoption</div>
-                    <div class="skill-card">Zapier & Automation</div>
-                    <div class="skill-card">API Testing (Postman)</div>
+
+        <section class="content-section" id="skills">
+            <h2>Skills & Tools</h2>
+            <div class="work-container">
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="skill-details1">
+                        <div>
+                            <h3>Customer Success & Account Management</h3>
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="skill-details1">
+                        <ul>
+                            <li>Customer Relationship Management (CRM)</li>
+                            <li>Client Onboarding & Training</li>
+                            <li>Renewals Management</li>
+                            <li>Retention & Churn Reduction Strategies</li>
+                            <li>Upselling & Cross-selling Identification</li>
+                            <li>Product Adoption & Customer Engagement</li>
+                            <li>Escalation Handling & Issue Resolution</li>
+                            <li>Customer Success Metrics (NPS, CSAT, Churn Analysis)</li>
+                            <li>Customer Advocacy</li>
+                            <li>Consultative Sales Approach</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="skills-side">
-                    <div class="skill-card">Salesforce, Zendesk, Freshdesk</div>
-                    <div class="skill-card">MySQL / HTML / CSS / JSON</div>
-                    <div class="skill-card">Onboarding & Training</div>
-                    <div class="skill-card">Communication & Problem-Solving</div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="skill-details2">
+                        <div>
+                            <h3>Technical & Data Analysis</h3>
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="skill-details2">
+                        <ul>
+                            <li>API Testing (Postman, VS Code)</li>
+                            <li>MySQL (Database Querying)</li>
+                            <li>HTML, CSS, JSON</li>
+                            <li>Angular [cite: 47]</li>
+                            <li>Google Cloud Console Administration</li>
+                            <li>Google Firebase Integration</li>
+                            <li>Apple Developer Tools (APNS)</li>
+                            <li>Zapier Automation</li>
+                            <li>Technical Troubleshooting</li>
+                            <li>Strong Analytical Skills</li>
+                            <li>PCB Testing & Simulation Assistance [cite: 17, 38]</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="skill-details3">
+                        <div>
+                            <h3>CRM & Productivity Tools</h3>
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="skill-details3">
+                        <ul>
+                            <li>Salesforce</li>
+                            <li>Zendesk</li>
+                            <li>Freshdesk</li>
+                            <li>ClickUp</li>
+                            <li>ServiceNow</li>
+                            <li>Jira</li>
+                            <li>GoHighLevel (GHL) Platform</li>
+                            <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                            <li>Google Suite (Docs, Sheets, Slides, Meet)</li>
+                            <li>Slack Communication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="work-card-header" aria-expanded="false" aria-controls="skill-details4">
+                        <div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="work-details" id="skill-details4">
+                        <ul>
+                            <li>Communication (Verbal & Written)</li>
+                            <li>Negotiation Skills</li>
+                            <li>Problem-Solving & Critical Thinking</li>
+                            <li>Process Optimization</li>
+                            <li>Team Collaboration</li>
+                            <li>Leadership Skills </li>
+                            <li>Multitasking </li>
+                            <li>Adaptability & Open-mindedness</li>
+                            <li>Detail-Oriented </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <section class="glass-container education-section">
+
+        <section class="content-section" id="education">
             <h2>Education</h2>
-            <ul>
-                <li><strong>B.E. in Electrical and Electronics Engineering</strong> – Anna University</li>
-                <li><strong>High School</strong> – S.C.S Matriculation Higher Secondary School</li>
-            </ul>
-        </section>
-        <section class="links-section glass-container">
-            <h2>Explore More</h2>
-            <div class="link-buttons">
-                <a href="Vishnu_Resume.pdf" class="btn" download>Download Resume</a>
-                <a href="https://linkedin.com/in/vkanti" class="btn" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Viishy" class="btn" target="_blank">GitHub</a>
-                <a href="https://www.naukri.com/mnjuser/profile" class="btn" target="_blank">Naukri</a>
+            <div class="detail-card">
+                <h3>Bachelor of Engineering (B.E.)</h3>
+                <h4>Electrical and Electronics Engineering</h4>
+                <p>New Horizon College of Engineering (Affiliated to VTU)</p>
+                <em>2015 - 2021</em>
+                <p>CGPA: 7.36</p>
             </div>
         </section>
+
+        <section class="content-section" id="contact">
+            <h2>Contact</h2>
+            <div class="detail-card">
+                <h3>Get In Touch</h3>
+                <p>Feel free to reach out via email, phone, or connect on social platforms.</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:Vishnukant953@gmail.com">Vishnukant953@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+917992370409">+91 7992370409</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+917992370409">+91 8296453653</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vishnu-kumar-787793297/"
+                            target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+
+                    <li><i class="fas fa-map-marker-alt"></i>Bangalore, India</li>
+                </ul>
+            </div>
+        </section>
+
     </main>
-</body>
-</html>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/vishnu-kumar-787793297/" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-linkedin"></i> LinkedIn</a>
+
+            <a href="mailto:Vishnukant953@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="tel:+917992370409"><i class="fas fa-phone"></i> Phone</a>
+            <a href="Vishnu_Resume.pdf" download><i class="fas fa-download"></i> Download Resume</a>
+            <a href="#home"><i class="fas fa-arrow-up"></i> Back to Top</a>
+        </div>
+        &copy; 2025 Vishnu Kumar Kanti - All Rights Reserved
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typed.js initialization
+        if (document.getElementById('element')) {
+            var typed = new Typed('#element', {
+                // Adjusted strings based on resume summaries
+                strings: ['Customer Success Professional', 'Account Specialist', 'Technical Support Expert', 'Client Onboarding Expert', 'Web Developer'],
+                typeSpeed: 40,
+                backSpeed: 30,
+                loop: true,
+                smartBackspace: true
+            });
+        } else {
+            console.error("Typed.js target element '#element' not found.");
+        }
