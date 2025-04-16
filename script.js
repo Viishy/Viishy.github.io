@@ -37,7 +37,7 @@
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         // Optional: Unobserve after animation to save resources
-                        // observer.unobserve(entry.target);
+                        observer.unobserve(entry.target);
                     }
                     // Optional: Remove 'visible' class if element scrolls out of view
                     // else {
