@@ -271,7 +271,7 @@
     opacity: 1;
 }
 
-       /*// .work-details {
+       /* // .work-details {
             max-height: 0;
             opacity: 0;
             overflow: hidden;
@@ -285,7 +285,8 @@
             /* Increased max-height */
             opacity: 1;
             padding: 20px 25px;
-        }*/
+        } 
+*/
 
         .work-item.active .toggle-icon {
             transform: rotate(45deg);
