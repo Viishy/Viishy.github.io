@@ -1,4 +1,5 @@
- // Accordion/Toggle Functionality
+<script>
+// Accordion/Toggle Functionality
         function setupAccordionToggle() {
             const accordionItems = document.querySelectorAll('.work-item');
             if (!accordionItems.length) { return; }
@@ -60,3 +61,4 @@
             setupAccordionToggle();
             setupScrollAnimation(); // Initialize scroll animation
         });
+</script>
