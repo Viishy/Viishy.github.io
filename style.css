@@ -259,8 +259,19 @@
             transition: transform 0.3s ease;
             line-height: 1;
         }
+.work-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
 
-        .work-details {
+.work-item.active .work-details {
+    max-height: 1000px; /* or a reasonable max */
+    opacity: 1;
+}
+
+       /*// .work-details {
             max-height: 0;
             opacity: 0;
             overflow: hidden;
@@ -274,7 +285,7 @@
             /* Increased max-height */
             opacity: 1;
             padding: 20px 25px;
-        }
+        }*/
 
         .work-item.active .toggle-icon {
             transform: rotate(45deg);
